@@ -1,8 +1,8 @@
 const aoijs = require("aoi.js")
 const fs = require('fs');
 const bot = new aoijs.Bot({
-    token: "OTI1OTg4NDQ1NDc2NzUzNDc5.Yc1H8Q.qM4ppXkseSdWXFepJ-Djy7GqoDU",
-prefix: ["+", "$getServerVar[prefix]"],
+    token: "process.env.token",
+prefix: ["$getServerVar[prefix]"],
 mobile: true,
 sharding: false, //true or false
     shardAmount: 20,
@@ -84,10 +84,7 @@ prefix: "+",
 WelcomeChannel: "",
 WelcomeMessage: "Welcome {user.ping} To {server}!",
  WelcomeTitle:"Welcome {user.ping}",
-afk: "false",
-afkmsg: "none",
-authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkyNTk4ODQ0NTQ3Njc1MzQ3OSIsImJvdCI6dHJ1ZSwiaWF0IjoxNjQ2MDcyOTEzfQ.nuNGYyemMCxra3V1kHCEjxenyR6WpBr4EpGQqhVl7-Q",
-  wallet: "0", //wallet money
+wallet: "0", //wallet money
   bank: "0", //bank money
   bio: "I am Just a Plain Human" //user bio for profile
 });
