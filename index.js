@@ -1,5 +1,5 @@
+const { keep_alive } = require("./keep_alive");
 const aoijs = require("aoi.js")
-
 const bot = new aoijs.Bot({
     token: "bot_token",
 prefix: "bot_prefix",
