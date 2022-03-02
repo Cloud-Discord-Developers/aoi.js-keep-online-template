@@ -1,7 +1,7 @@
 const { keep_alive } = require("./keep_alive");
 const aoijs = require("aoi.js")
 const bot = new aoijs.Bot({
-    token: "bot_token",
+    token: "process.env.token",
 prefix: "bot_prefix",
 mobile: true, //True or false
 
