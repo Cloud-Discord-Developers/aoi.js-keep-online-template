@@ -1,9 +1,11 @@
 module.exports = {
     name: "kick",
+category: "Admin",
     code: `$kick[$mentioned[1];$guildID;$if[$noMentionMessage==;Not Privded;$noMentionMessage]]
     $title[1;Member Kicked!]
     $description[1;<@$authorID> kicked <@$mentioned[1]>
     Reason: $if[$noMentionMessage==;Not Privded;$noMentionMessage]
+	$addTimestamp[1]
     $color[1;RED]
     $onlyIf[$rolePosition[$highestRole[$authorID]]<$rolePosition[$highestRole[$mentioned[1]]];You can't kick someone with a higher role than you]
     $onlyIf[$highestRole[$mentioned[1]]!=$highestRole[$authorID];You can't kick someone with the same highest role]

@@ -1,5 +1,6 @@
 module.exports = ({
     name: "unban",
+category: "Admin",
     code: `
     $username[$message] has been unbanned from the guild.
     $unban[$message;$guildID;7;$noMentionMessage]

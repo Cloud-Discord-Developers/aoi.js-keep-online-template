@@ -1,5 +1,6 @@
 module.exports = ({
     name: "clear",
+category: "Admin",
     code: `
     $clear[100]
     $title[1;($username[$clientID])]
