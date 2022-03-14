@@ -4,13 +4,15 @@ Need Help Add me on Discord: CloudGamer#2023
 
 Main GitHub Repo: https://github.com/CloudGamer131/aoi-js-bot-template-commands
 
-Step One: http://bin.cloudcodes.xyz:1030/fecekobawe.js 
+Step One: 
+const express = require('express');
+const app = express();
+const port = 3000;
+app.listen(port, () => console.log(`Bot running on http://localhost:${port}`));
 
-Add Keep_alive.js file and import this code
+const { keep_alive } = require("express")
 
-Step Two: http://bin.cloudcodes.xyz:1030/yagaxitiha.kotlin
-
-Add This Code to your index.js file or your bots main file on replit
+Add index.js file and import this code
 
 Step Three: https://uptimerobot.com/ 
 
